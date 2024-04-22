@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/public/css/output.css">
+    <link rel="stylesheet" href="/src/fontawesome/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-100 font-inter fixed top-0 w-full">
+        <div class="flex md:justify-between justify-around items-center container mx-auto py-3">
+            <div id="logo">
+                <h1 class="font-bold text-xl">Al-Nasr</h1>
+            </div>
+            <div id="nav-items">
+                <ul class="md:flex gap-7 hidden">
+                    <li><a href="" class="hover:text-orange-400">Home</a></li>
+                    <li><a href="" class="hover:text-orange-400">About US</a></li>
+                    <li><a href="" class="hover:text-orange-400">Package</a></li>
+                    <li><a href="" class="hover:text-orange-400">Facilities</a></li>
+                    <li><a href="" class="hover:text-orange-400">Gallery</a></li>
+                </ul>
+            </div>
+            <div id="button" class="flex items-center gap-x-5">
+                <button class="py-3 px-5 border-2 border-slate-400 hover:bg-orange-500 text-black rounded-lg flex">Contact US</button>
+                <span id="menu" class="flex md:hidden"><i class="fa-solid fa-bars cursor-pointer menu"></i></span>
+            </div>
+        </div>
+        <div class="">
+            <ul class=" flex flex-col gap-3 md:hidden pb-2 transition duration-500 ease-in-out fixed top-10 z-50 w-full bg-violet-700" id="dropdown">
+                <li><a href="" class="hover:bg-orange-400 w-full block p-3">Home</a></li>
+                <li><a href="" class="hover:bg-orange-400 w-full block p-3">About US</a></li>
+                <li><a href="" class="hover:bg-orange-400 w-full block p-3">Package</a></li>
+                <li><a href="" class="hover:bg-orange-400 w-full block p-3">Facilities</a></li>
+                <li><a href="" class="hover:bg-orange-400 w-full block p-3">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bg-gray-100 mt-20">
+        <div class="flex justify-evenly items-center md:flex-row md:gap-y-5 flex-col-reverse">
+            <div class=" flex flex-col gap-y-5">
+                <h1 class="text-3xl font-bold">Make it easy for your <br> Umrah  worship with <br> Al Nasr Travel</h1>
+                <p>Facilitate your Umrah pilgrimage with us, we already have <br>hundreds of thousands of customers, you can go for <br> Umrah to Mecca and Medina</p>
+                <button class="py-3 px-5 bg-orange-400 hover:bg-orange-500 text-black rounded-lg w-40">Contact US</button>
+            </div>
+            <div>
+                <img src="/src/image/Image-Hero.svg" alt="" class="h-52">
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const menu = document.querySelector('#menu');
+        const dropdown = document.querySelector('#dropdown')
+        menu.addEventListener('click', function(){
+            if (!dropdown.classList.contains('hidden')) {
+            dropdown.classList.add('hidden'); // Menyembunyikan menu dropdown
+        }
+        else {
+            dropdown.classList.remove('hidden'); // Menampilkan menu dropdown
+        }
+        })
+    </script>
+</body>
+</html>

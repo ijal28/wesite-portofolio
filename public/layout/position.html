@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position || Tailwind CSS</title>
+    <link rel="stylesheet" href="/public/css/output.css">
+</head>
+<body>
+
+    <!-- Fixed -->
+    <nav class="bg-slate-900 flex justify-between items-center p-4 text-white fixed w-full z-30">
+        <div id="nav-logo">
+            <a href="#" class="font-medium justify-center">Akhmad Rijal Syukri</a>
+        </div>
+        <div id="nav-items" class="hidden md:flex space-x-5">
+            <ul class="flex">
+                <li><a href="#" class="hover:bg-slate-100 px-3 py-2 rounded-lg hover:text-black text-sm font-medium">About</a></li>
+                <li><a href="#" class="hover:bg-slate-100 px-3 py-2 rounded-lg hover:text-black text-sm font-medium">Skill</a></li>
+                <li><a href="#" class="hover:bg-slate-100 px-3 py-2 rounded-lg hover:text-black text-sm font-medium">Education</a></li>
+                <li><a href="#" class="hover:bg-slate-100 px-3 py-2 rounded-lg hover:text-black text-sm font-medium">Portofolio</a></li>
+                <li><a href="#" class="hover:bg-slate-100 px-3 py-2 rounded-lg hover:text-black text-sm font-medium">Certificate</a></li>
+                <li><a href="#" class="hover:bg-slate-100 px-3 py-2 rounded-lg hover:text-black text-sm font-medium">Contact</a></li>
+            </ul>
+        </div>
+        <div class="absolute text-white text-xl cursor-pointer right-5 hover:text-sky-500 md:hidden">
+            <i class="bx bx-menu"></i>
+        </div>
+    </nav>
+
+        <!-- Parent Relative > absolute Child-->
+   <div class="size-60 bg-sky-800 relative text-white mb-20">
+        <p>relative</p>
+        <div class="size-40 bg-green-600 absolute bottom-0">
+            <p>Absolute</p>
+        </div>
+    </div> 
+
+     <!--Parent Static > absolute Child-->
+   <div class="size-60 bg-sky-800 static text-white mb-20">
+            <p>Sctatic</p>
+            <div class="size-40 bg-green-600 absolute bottom-0">
+                <p>Absolute</p>
+            </div>
+        </div>
+</body>
+</html>

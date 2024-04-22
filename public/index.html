@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="/public/css/output.css">
+    <link rel="stylesheet" href="/src/fontawesome/css/all.min.css">
+</head>
+<body class="font-roboto bg-slate-200">
+    <header>
+        <nav class="flex justify-between items-center md:justify-evenly bg-slate-900 text-white py-4 box-border shadow-lg fixed w-full top-0 z-50">
+            <div class="logo ml-5 md:ml-0">
+                <a href="">
+                    <span class="text-xl font-extrabold text-white hover:text-sky-500 uppercase animate-pulse">Akhmad Rijal Syukri</span>
+                </a>
+            </div>
+            <div class="content-nav hidden md:flex">
+                <ul class="flex gap-x-3">
+                    <li><a href="#about" class="px-3 py-2 rounded-md hover:bg-sky-600">About</a></li>
+                    <li><a href="#skill" class="px-3 py-2 rounded-md hover:bg-sky-600">Skill</a></li>
+                    <li><a href="#education" class="px-3 py-2 rounded-md hover:bg-sky-600">Education</a></li>
+                    <li><a href="#portofolio" class="px-3 py-2 rounded-md hover:bg-sky-600">Portofolio</a></li>
+                    <li><a href="#certificate" class="px-3 py-2 rounded-md hover:bg-sky-600">Certificate</a></li>
+                    <li><a href="#contact" class="px-3 py-2 rounded-md hover:bg-sky-600">Contact</a></li>
+                </ul>
+            </div>
+            <button class="mr-5 md:mr-0 sm:flex md:hidden lg:hidden"><i class="fa-solid fa-bars cursor-pointer hover:text-sky-500 buttonToggle"></i></button>
+        </nav>
+    </header>
+    <div class="content-nav hidden bg-slate-900 text-white py-4 pt-20 pl-6 navDropdown transition duration-700 ease-in-out md:hidden fixed w-full z-10 top-0 p-3">
+        <ul class="flex flex-col gap-y-5">
+            <li><a href="#about" class="px-3 py-2 block rounded-md hover:bg-sky-600">About</a></li>
+            <li><a href="#skill" class="px-3 py-2 block rounded-md hover:bg-sky-600">Skill</a></li>
+            <li><a href="#education" class="px-3 py-2 block rounded-md hover:bg-sky-600">Education</a></li>
+            <li><a href="#portofolio" class="px-3 py-2 block rounded-md hover:bg-sky-600">Portofolio</a></li>
+            <li><a href="#certificate" class="px-3 py-2 block rounded-md hover:bg-sky-600">Certificate</a></li>
+            <li><a href="#contact" class="px-3 py-2 block rounded-md hover:bg-sky-600">Contact</a></li>
+        </ul>
+    </div>
+    <!-- <div class="top-sidebar absolute top-0 w-full transition-opacity duration-300 ease-in-out hidden sm:hidden">
+        <div class="w-full bg-slate-900 mt-5 text-white py-5 relative">
+            <ul class="flex flex-col gap-y-3 pt-2">
+                <i class="fa-solid fa-x cursor-pointer hover:text-sky-500 absolute right-4 top-1"></i>
+                <li class="py-2 hover:bg-sky-600 mt-2"><a href="" class="ml-4">About</a></li>
+                <li class="py-2 hover:bg-sky-600"><a href="" class="ml-4">Skill</a></li>
+                <li class="py-2 hover:bg-sky-600"><a href="" class="ml-4">Education</a></li>
+                <li class="py-2 hover:bg-sky-600"><a href="" class="ml-4">Portofolio</a></li>
+                <li class="py-2 hover:bg-sky-600"><a href="" class="ml-4">Contact</a></li>
+            </ul>
+        </div>
+    </div> -->
+
+    <main>
+        <section class="bg-slate-900 w-full h-1/3 pt-20" id="about">
+            <h1 class="text-white uppercase text-2xl text-center font-bold mt-10 mb-10">About</h1>
+            <div class=" flex justify-evenly items-center gap-y-10 flex-wrap flex-col-reverse sm:flex-row pb-36">
+                <div class="about-text w-[60%] md:w-[50%]">
+                <h2 class="text-4xl uppercase font-extrabold text-center md:text-start bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 animate-bounce">Akhmad Rijal Syukri</h2>
+                <h3 class="text-2xl text-sky-500 font-bold text-center md:text-start animate-pulse uppercase">Front End Developer</h3>
+                <p class="text-justify text-white mb-7 ">
+                    seorang pengembang front-end dengan pengalaman tiga tahun. Keahlian saya meliputi HTML, CSS, TailwindCSS, dan JavaScript. Saya ahli dalam menciptakan tata letak responsif dan antarmuka pengguna yang dinamis. Saya senang belajar hal baru dan berkolaborasi dalam lingkungan yang dinamis.
+                </p>
+                <a href="/src/file/akhmadrijalsyukri_cv.pdf" download="akhmadrijalsyukri_cv" class=" bg-sky-500 px-3 py-2 rounded-lg shadow-lg hover:bg-sky-300">Download CV</a>
+                </div>
+                <div class="about-image bg-white rounded-lg aspect-2/3 h-72 object-cover object-center overflow-hidden cursor-pointer group grayscale hover:grayscale-0 shadow-sm shadow-white">
+                    <img src="/src/image/pp asli.png" class="group-hover:scale-105 transition duration-300 ease-in-out">
+                    </div>
+            </div>
+        </section>
+        <section class=" w-full h-1/3" id="skill">
+            <h1 class="uppercase text-2xl text-center font-bold text-slate-900 pt-20">Skill</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center place-items-center gap-8 mt-20 m-5">
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image aspect-w-2 aspect-h-3">
+                        <img src="/src/image/html.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">HTML</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/css.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">CSS</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/tailwind.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">TAILWIND CSS</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/javascript.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">Javascript</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/html.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">React JS</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/html.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">Mongo DB</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/html.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">Express JS</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 rounded-lg overflow-hidden w-80 md:w-72 lg:w-72 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/html.png" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-white text-center text-2xl font-bold mb-2">Node JS</h1>
+                        <p class="text-white text-center text-sm">Berpengalaman selama 3 tahun</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="bg-slate-900 mt-20 pb-20" id="education">
+            <h1 class="text-sky-500 text-2xl text-center pt-20 uppercase font-bold">Education</h1>
+            <div class="flex justify-evenly items-center flex-wrap flex-col md:flex-row gap-y-8 mt-20">
+                <div class="education-gambar " data-aos="zoom-in">
+                    <img src="/src/image/foto-education.jpg" class="h-96 w-96 object-cover object-center rounded-lg hover:scale-105 transition duration-300 ease-in-out" alt="">
+                </div>
+                <div class="education-content">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                       <div class="bg-white aspect-video h-40 rounded-lg grid place-content-center place-items-center shadow-sm shadow-white font-semibold hover:scale-105 transition duration-300 ease-in-out group hover:bg-sky-500" data-aos="zoom-in">
+                        <h1 class="group-hover:text-white">Politeknik Negeri Indramayu</h1>
+                        <h2 class="group-hover:text-white">D3 Teknik Informatika</h2>
+                        <p class="group-hover:text-white">2020 - 2023</p>
+                       </div>
+                       <div class="bg-white aspect-video h-40 rounded-lg grid place-content-center place-items-center shadow-sm shadow-white font-semibold hover:scale-105 transition duration-300 ease-in-out group hover:bg-sky-500" data-aos="zoom-in">
+                        <h1 class="group-hover:text-white">SMK Negeri 1 Indramayu</h1>
+                        <h2 class="group-hover:text-white">Multimedia</h2>
+                        <p class="group-hover:text-white">2017 - 2020</p>
+                       </div>
+                       <div class="bg-white aspect-video h-40 rounded-lg grid place-content-center place-items-center shadow-sm shadow-white font-semibold hover:scale-105 transition duration-300 ease-in-out group hover:bg-sky-500" data-aos="zoom-in">
+                        <h1 class="group-hover:text-white">SMP Negeri 1 Indramayu</h1>
+                        <p class="group-hover:text-white">2014 - 2017</p>
+                       </div>
+                       <div class="bg-white aspect-video h-40 rounded-lg grid place-content-center place-items-center shadow-sm shadow-white font-semibold hover:scale-105 transition duration-300 ease-in-out group hover:bg-sky-500" data-aos="zoom-in">
+                        <h1 class="group-hover:text-white">SD Negeri Dukuh</h1>
+                        <p class="group-hover:text-white">2008 - 2014</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-slate-200 mt-20" id="portofolio">
+            <h1 class="text-slate-900 text-2xl text-center pt-20 uppercase font-bold">Porotofolio</h1>
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-evenly place-items-center gap-8 m-5 mt-20 ">
+                <div class="bg-white rounded-lg overflow-hidden w-96 md:w-80 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/grobdesk-.jpg" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-black text-center text-2xl font-bold mb-2 uppercase">Aplikasi CRM System</h1>
+                        <p class="text-black text-justify text-sm">Aplikasi CRM System adalah aplikasi untuk menangani keluhan customer terkait pemesanan. Aplikasi ini dibuat dengan menggunakan <strong>PHP</strong>, <strong>boostrap</strong> dan 
+                            <strong>MySQL</strong> sebagai databasenya.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden w-96 sm:w-96 md:w-80 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/grobdesk-.jpg" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-black text-center text-2xl font-bold mb-2 uppercase">Aplikasi GYM</h1>
+                        <p class="text-black text-justify text-sm">Aplikasi CRM System adalah aplikasi untuk menangani keluhan customer terkait pemesanan. Aplikasi ini dibuat dengan menggunakan <strong>PHP</strong>, <strong>boostrap</strong> dan 
+                            <strong>MySQL</strong> sebagai databasenya.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden w-96 sm:w-96 md:w-80 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/grobdesk-.jpg" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-black text-center text-2xl font-bold mb-2 uppercase">Portofolio Personal</h1>
+                        <p class="text-black text-justify text-sm">Aplikasi CRM System adalah aplikasi untuk menangani keluhan customer terkait pemesanan. Aplikasi ini dibuat dengan menggunakan <strong>PHP</strong>, <strong>boostrap</strong> dan 
+                            <strong>MySQL</strong> sebagai databasenya.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden w-96 sm:w-96 md:w-80 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/grobdesk-.jpg" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-black text-center text-2xl font-bold mb-2 uppercase">Portofolio Personal</h1>
+                        <p class="text-black text-justify text-sm">Aplikasi CRM System adalah aplikasi untuk menangani keluhan customer terkait pemesanan. Aplikasi ini dibuat dengan menggunakan <strong>PHP</strong>, <strong>boostrap</strong> dan 
+                            <strong>MySQL</strong> sebagai databasenya.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden w-96 sm:w-96 md:w-80 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                    <div class="card-image">
+                        <img src="/src/image/grobdesk-.jpg" alt="HTML Image" class="object-cover object-center">
+                    </div>
+                    <div class="p-4">
+                        <h1 class="text-black text-center text-2xl font-bold mb-2 uppercase">Website Wisata</h1>
+                        <p class="text-black text-justify text-sm">Aplikasi CRM System adalah aplikasi untuk menangani keluhan customer terkait pemesanan. Aplikasi ini dibuat dengan menggunakan <strong>PHP</strong>, <strong>boostrap</strong> dan 
+                            <strong>MySQL</strong> sebagai databasenya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-slate-900 mt-40 pb-20" id="certificate">
+            <h1 class="text-sky-500 text-2xl text-center pt-20 uppercase font-bold mb-20">Certificate</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 place-content-center place-items-center gap-8 p-5">
+                <div class="aspect-4/3 lg:aspect-4/3 h-40 md:h-42 lg:h-60 bg-white rounded-lg overflow-hidden group
+group" data-aos="fade-left">
+                    <div class="w-full h-full bg-[url('/src/image/sertifikat-1.png')] bg-cover bg-center group-hover:scale-110 transition duration-300 ease-in-out" ></div>
+                </div>
+                <div class="aspect-4/3 lg:aspect-4/3 h-40 md:h-42 lg:h-60 bg-white rounded-lg overflow-hidden group
+group" data-aos="fade-left">
+                    <div class="w-full h-full bg-[url('/src/image/sertifikat-2.png')] bg-cover bg-center group-hover:scale-110 transition duration-300 ease-in-out" ></div>
+                </div>
+                <div class="aspect-4/3 lg:aspect-4/3 h-40 md:h-42 lg:h-60 bg-white rounded-lg overflow-hidden group
+group" data-aos="fade-left">
+                    <div class="w-full h-full bg-[url('/src/image/sertifikat-3.png')] bg-cover bg-center group-hover:scale-110 transition duration-300 ease-in-out" ></div>
+                </div>
+                <div class="aspect-4/3 lg:aspect-4/3 h-40 md:h-42 lg:h-60 bg-white rounded-lg overflow-hidden group
+group" data-aos="fade-left">
+                    <div class="w-full h-full bg-[url('/src/image/sertifikat-4.png')] bg-cover bg-center group-hover:scale-110 transition duration-300 ease-in-out" ></div>
+                </div>
+                <div class="aspect-4/3 lg:aspect-4/3 h-40 md:h-42 lg:h-60 bg-white rounded-lg overflow-hidden group
+group" data-aos="fade-left">
+                    <div class="w-full h-full bg-[url('/src/image/sertifikat-5.png')] bg-cover bg-center group-hover:scale-110 transition duration-300 ease-in-out" ></div>
+                </div>
+                <div class="aspect-4/3 lg:aspect-4/3 h-40 md:h-42 lg:h-60 bg-white rounded-lg overflow-hidden group
+group" data-aos="fade-left">
+                    <div class="w-full h-full bg-[url('/src/image/sertifikat-6.png')] bg-cover bg-center group-hover:scale-110 transition duration-300 ease-in-out" ></div>
+                </div>
+            </div>
+        </section>
+        <section class="" id="contact">
+            <h1 class="text-sky-500 text-2xl text-center pt-20 uppercase font-bold mb-20">Contact</h1>
+                <div class="flex justify-evenly flex-wrap flex-col-reverse md:flex-row items-center md:items-start gap-10">
+                    <form action="" class="flex gap-5 flex-col">
+                        <div class="">
+                            <label for="nama" class="block font-bold ml-2">Nama</label>
+                            <input type="text" name="nama" id="nama" class="p-2 w-full rounded-md bg-white border border-gray-300 shadow-md focus:outline-none focus:border-sky-500 focus:ring focus:ring-sky-500 ">
+                        </div>
+                        <div>
+                            <label for="email" class="block font-bold ml-2">Email</label>
+                            <input type="email" name="email" id="email" class="p-2 w-full rounded-md bg-white border border-gray-300 shadow-md focus:outline-none focus:border-sky-500 focus:ring focus:ring-sky-500 ">
+                        </div>
+                        <div>
+                            <label for="pesan" class="block font-bold ml-2">Pesan</label>
+                            <textarea name="pesan" id="pesan" cols="30" rows="10" class="w-96 rounded-md bg-white border border-gray-300 shadow-md focus:outline-none focus:border-sky-500 focus:ring focus:ring-sky-500 resize-none "></textarea>
+                        </div>
+                        <button class="p-2 bg-sky-600 rounded-2xl w-full text-white hover:bg-sky-400 hover:text-black font-bold shadow-xl">Kirim</button>
+                    </form>
+                        <div class="flex flex-col gap-10 justify-start items-start ">
+                            <div class="flex justify-evenly items-center flex-row gap-5">
+                                <div class="flex justify-center items-center size-10 bg-sky-300 rounded-full p-2">
+                                    <i class="fa-solid fa-location-dot text-3xl text-sky-900"></i>
+                                </div>
+                                    
+                                <div class="flex flex-col">
+                                    <h1 class="text-lg font-bold">Address</h1>
+                                    <p>DS. Dukuh jln. Pesanggrahan RT/RW 001/001</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-evenly items-center flex-row gap-5">
+                                <div class="flex justify-center items-center size-10 bg-sky-300 rounded-full">
+                                <i class="fa-brands fa-instagram text-3xl text-sky-900"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-lg font-bold">Instagram</h1>
+                                    <p>iijaaal_</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-evenly items-center flex-row gap-5">
+                                <div class="flex justify-center items-center size-10 bg-sky-300 rounded-full">
+                                <i class="fa-solid fa-envelope text-3xl text-sky-900"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-lg font-bold">E-Mail</h1>
+                                    <p>akhmadrijalsyukri02mm1@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 mt-20 p-3">
+        <p class="uppercase text-white text-center">&copy; 2024 Akhmad Rijal Syukri</p>
+    </footer>
+
+    <script>
+    const buttonToggle = document.querySelector('.buttonToggle');
+    const navDropdown = document.querySelector('.navDropdown');
+    const navItems = navDropdown.querySelectorAll('a');
+
+    // Tambahkan event listener pada setiap item menu
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            navDropdown.classList.add('hidden'); // Menyembunyikan menu dropdown
+        });
+    });
+
+    buttonToggle.addEventListener('click', function(){
+        // Menambahkan pengecekan apakah menu dropdown sudah ditampilkan
+        if (!navDropdown.classList.contains('hidden')) {
+            navDropdown.classList.add('hidden'); // Menyembunyikan menu dropdown
+        }
+        else {
+            navDropdown.classList.remove('hidden'); // Menampilkan menu dropdown
+        }
+    });
+
+
+    </script>
+</body>
+</html>

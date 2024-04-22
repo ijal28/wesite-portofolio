@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Pengelolaan Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-6">
+  <h1 class="text-3xl font-bold mb-4">Aplikasi Pengelolaan Data</h1>
+  <form id="data-form">
+    <div class="mb-4">
+      <label for="name" class="block text-gray-700 font-bold mb-2">Nama</label>
+      <input type="text" id="name" class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan nama">
+    </div>
+    <div class="mb-4">
+      <label for="age" class="block text-gray-700 font-bold mb-2">Umur</label>
+      <input type="number" id="age" class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan umur">
+    </div>
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      Simpan
+    </button>
+  </form>
+  <h2 class="text-2xl font-bold mb-2 mt-8">Data yang disimpan:</h2>
+  <ul id="data-list" class="list-decimal list-inside"></ul>
+  <script>
+
+document.getElementById('data-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const age = document.getElementById('age').value;
+
+  if (!name || !age) {
+    alert('Nama dan umur harus diisi!');
+    return;
+  }
+
+  const data = { name, age };
+
+  localStorage.setItem(name, JSON.stringify(data));
+
+  const dataList = document.getElementById('data-list');
+  dataList.innerHTML += `<li>${name} - ${age}</li>`;
+
+  document.getElementById('name').value = '';
+  document.getElementById('age').value = '';
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dataList = document.getElementById('data-list');
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const name = localStorage.key(i);
+    const data = JSON.parse(localStorage.getItem(name));
+
+    dataList.innerHTML += `<li>${data.name} - ${data.age}</li>`;
+  }
+});
+
+  </script>
+</body>
+</html>

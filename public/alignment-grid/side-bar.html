@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar</title>
+    <link rel="stylesheet" href="/public/css/output.css">
+    <link rel="stylesheet" href="/src/fontawesome/css/all.min.css">
+</head>
+<body>
+    <nav class="container mx-auto">
+        <div class="bg-sky-400">
+            <ul class="py-2 ml-3">
+                <li class=" md:hidden">
+                    <i class="fa-solid fa-bars hover:bg-slate-900 hover:text-white p-3 rounded-full cursor-pointer buttonToggle"></i></li>
+            </ul>
+        </div>
+        <div class="container bg-black fixed z-10 hidden md:hidden left-0 top-[55px] w-80 h-full navDropdown transition duration-[5000] ease-linear">
+            <ul class="flex flex-col font-bold uppercase w-full p-3">
+                <li><a href=""
+                        class=" px-5 py-3 block text-white rounded-md hover:bg-white hover:text-black transition ease-in-out duration-500">About</a>
+                </li>
+                <li><a href=""
+                        class=" px-5 py-3 block text-white rounded-md hover:bg-white hover:text-black transition ease-in-out duration-500">Skill</a>
+                </li>
+                <li><a href=""
+                        class=" px-5 py-3 block text-white rounded-md hover:bg-white hover:text-black transition ease-in-out duration-500">Education</a>
+                </li>
+                <li><a href=""
+                        class=" px-5 py-3 block text-white rounded-md hover:bg-white hover:text-black transition ease-in-out duration-500">Portofolio</a>
+                </li>
+                <li><a href=""
+                        class=" px-5 py-3 block text-white rounded-md hover:bg-white hover:text-black transition ease-in-out duration-500">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+    const buttonToggle = document.querySelector('.buttonToggle');
+    const navDropdown = document.querySelector('.navDropdown');
+    const navItems = navDropdown.querySelectorAll('a');
+
+    // Tambahkan event listener pada setiap item menu
+    navItems.forEach(item => {
+        item.addEventListener('click', function () {
+            navDropdown.classList.add('hidden'); // Menyembunyikan menu dropdown
+        });
+    });
+
+    buttonToggle.addEventListener('click', function () {
+        // Menambahkan pengecekan apakah menu dropdown sudah ditampilkan
+        if (!navDropdown.classList.contains('hidden')) {
+            navDropdown.classList.add('hidden'); // Menyembunyikan menu dropdown
+        }
+        else {
+            navDropdown.classList.remove('hidden'); // Menampilkan menu dropdown
+        }
+    });
+
+
+</script>
+</body>
+</html>
